@@ -1,16 +1,27 @@
-## Hi there 👋
+## 👋 Hi, I'm Bisma Rafique  
 
-<!--
-**bisma-dev801/bisma-dev801** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Full-Stack Developer | React.js | Node.js | MySQL  
 
-Here are some ideas to get you started:
+I am a passionate full-stack developer with experience in building responsive and scalable web applications. I have developed projects like an e-commerce platform and a weather application using modern technologies.  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I enjoy creating clean, user-friendly applications and continuously improving my skills by working on real-world projects. Currently, I am focused on building advanced full-stack applications and looking for freelance and remote opportunities.  
+
+---
+
+## 🚀 Tech Stack  
+- Frontend: React.js, JavaScript, HTML, CSS, Tailwind CSS  
+- Backend: Node.js, Express.js  
+- Database: MySQL  
+- Tools: Git, GitHub, Vercel, Netlify  
+
+---
+
+## 📌 Projects  
+- E-commerce App  
+- Weather App  
+- Smart Task Manager (In Progress)  
+
+---
+
+## 📫 Contact  
+Email: bismarafique.67@gmail.com
