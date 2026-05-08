@@ -4,10 +4,8 @@ const db = require('../config/db');
 const router = express.Router();
 
 router.post('/register', async (req, res) => {
-  // ... your existing code (perfect!)
 });
 
-// Login - UPDATE to use utils:
 router.post('/login', (req, res) => {
   const { email, password } = req.body;
   
