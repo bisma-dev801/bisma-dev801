@@ -41,9 +41,9 @@ router.post('/register', async (req, res) => {
 
     db.query(query, [email, hashedPassword, name], (err) => {
       if (err) {
-        return res.status(500).json({ error: 'Registration failed' });
-      }
-
+  console.log("DB ERROR:", err);
+  return res.status(500).json({ error: err.sqlMessage });
+    }
       res.json({ message: 'User registered successfully' });
     });
 
@@ -85,5 +85,4 @@ router.post('/login', (req, res) => {
     });
   });
 });
-
 module.exports = router;
