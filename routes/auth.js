@@ -36,19 +36,20 @@ router.post('/register', async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const query =
-      'INSERT INTO users (email, password, name) VALUES (?, ?, ?)';
-
-    db.query(query, [email, hashedPassword, name], (err) => {
+    const query = `
+      INSERT INTO users (email, password, name)
+      VALUES (?, ?, ?)
+    `;
+    db.query(query, [email, hashedPassword, name || "User"], (err, result) => {
       if (err) {
-  console.log("DB ERROR:", err);
-  return res.status(500).json({ error: err.sqlMessage });
-    }
-      res.json({ message: 'User registered successfully' });
+        console.log("DB ERROR:", err);
+        return res.status(500).json({ error: err.sqlMessage });
+      }
+      res.json({ message: "User registered successfully" });
     });
-
   } catch (error) {
-    res.status(500).json({ error: 'Server error' });
+    console.log("SERVER ERROR:", error);
+    res.status(500).json({ error: "Server error" });
   }
 });
 
